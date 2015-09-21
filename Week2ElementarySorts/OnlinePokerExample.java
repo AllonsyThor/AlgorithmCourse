@@ -11,5 +11,8 @@ end;
 /* Notes 
 Bug 1: Random number r never 52, 52nd card can't end up in 52nd place.
 Bug 2: Shuffle not unifiorm (should be between 1 & i)
-Bug 3: random() uses 32-bit seed = 2^32 possible shuffles
+Bug 3: random() uses 32-bit seed => 2^32 possible shuffles
+Bug 4: Seed = milliseconds since midnight => 86.4 million shuffles
+
+Exploit: After seeing 5 cards and synchronizing with server clock, can determine ALL future cards in real time.
 */
