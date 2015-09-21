@@ -19,5 +19,6 @@ public class Date implements Comparable<Date>  /* only compares dates to other d
 		if (this.month > that.month) return +1;
 		if (this.day < that. day ) 	 return -1;
 		if (this.day > that.day )	 return +1;
+		return 0;
 	}
 }
