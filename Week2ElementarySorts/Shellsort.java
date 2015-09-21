@@ -15,7 +15,7 @@ public class Shell
 				exch(a, j, j-h); 
 			}
 
-			h - h/3; /*move to next increment */
+			h = h/3; /*move to next increment */
 		}
 	}
 
